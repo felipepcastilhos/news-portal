@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #c3d053;
+}
+
+#nav {
+    background-color: #4278bf;
+    padding: 30px;
+    width: 100%;
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#menu, #logo, #search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu img, #logo img, #search img {
+    max-width: 100%; /* Garante que as imagens se ajustem ao tamanho da coluna */
+}
+
+/* Estilo geral do container com a row e colunas */
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Flexbox para a row, garantindo que os itens se alinhem e distribuam corretamente */
+.row {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que os itens se movam para baixo */
+    justify-content: space-between; /* Espaça uniformemente os itens */
+    align-items: center; /* Alinha verticalmente os itens */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+}
+
+/* Ajustes específicos para a coluna com swiper */
+.col-8 {
+    flex: 1; /* Ocupa o espaço restante disponível */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o swiper */
+.swiper {
+    width: 100%;
+    overflow: hidden; /* Garante que o conteúdo não vaze */
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row; /* Alinha os slides horizontalmente */
+}
+
+.swiper-slide {
+    flex: 0 0 auto; /* Garante que os slides não se redimensionem */
+    margin-right: 10px; /* Espaçamento entre os slides */
+}
+
+.swiper-slide a {
+    text-decoration: none;
+    color: #000; /* Cor do texto dos links */
+    display: block;
+    padding: 5px; /* Adiciona algum padding ao link */
+}
+
+.swiper-slide a:hover {
+    color: #4278bf; /* Cor do link ao passar o mouse */
+}
+
+/* Estilo para o player */
+#player {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajusta o tamanho e espaçamento do select e do botão dentro do player */
+#player select {
+    margin-right: 10px; /* Espaçamento entre o select e o botão */
+}
+
+#player button img {
+    max-width: 30px; /* Ajusta o tamanho do ícone do botão */
+}
+
+/* Estilo para os aplicativos */
+#apps {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Garante que os ícones não se movam para a linha de baixo */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+}
+
+#apps a {
+    margin-left: 10px; /* Espaçamento entre os ícones dos aplicativos */
+}
+
+#apps img {
+    max-width: 30px; /* Ajusta o tamanho dos ícones dos aplicativos */
+}
+
+/* Ajuste de padding e margens para colunas auto */
+.col-auto {
+    display: flex;
+    align-items: center;
+}
