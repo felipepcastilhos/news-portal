@@ -1,3 +1,25 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none; 
+}
+
+
+/* ========== LOGO ========== */
+.logo-leouve {
+    width: 160px;
+    height: 51px; /* Ajuste este valor conforme necessário */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +31,7 @@ body {
 
 #nav {
     background-color: #4278bf;
-    padding: 30px;
+    padding: 14px;
     width: 100%;
     z-index: 9999;
     position: sticky;
@@ -23,9 +45,9 @@ body {
     justify-content: center;
 }
 
-#menu img, #logo img, #search img {
-    max-width: 100%; /* Garante que as imagens se ajustem ao tamanho da coluna */
-}
+/* #menu img, #logo img, #search img { */
+    /* max-width: 100%; Garante que as imagens se ajustem ao tamanho da coluna */
+/* } */
 
 /* Estilo geral do container com a row e colunas */
 .container {
