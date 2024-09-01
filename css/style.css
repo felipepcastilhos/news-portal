@@ -137,3 +137,155 @@ body {
     display: flex;
     align-items: center;
 }
+ .inline-news {
+            margin-bottom: 1rem; /* Ajuste a margem inferior conforme necessário */
+        }
+
+        .row.no-gutters {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .col-md-4 {
+            padding: 0;
+        }
+
+        .thumbnail img {
+            max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+        .col-md-8 {
+            padding-left: 1.5rem; /* Ajuste o padding conforme necessário */
+        }
+
+        /* Container para a categoria e a hat na mesma linha */
+        .category-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espaçamento entre category e hat */
+            margin-bottom: 0.5rem; /* Margem inferior entre categoria e título */
+        }
+
+        /* Estilo da category */
+        .category {
+            font-weight: bold;
+            color: #333; /* Ajuste a cor conforme necessário */
+            text-decoration: none;
+        }
+
+        /* Estilo da hat */
+        .hat {
+            font-style: italic;
+            color: #666; /* Ajuste a cor conforme necessário */
+        }
+
+        /* Estilo do título */
+        .title {
+            margin: 0.5rem 0; /* Ajuste a margem conforme necessário */
+        }
+
+        .title a {
+            text-decoration: none;
+            color: inherit; /* Faz com que a cor do link siga a cor do texto */
+        }
+
+        
+        .infos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem; 
+            color: #666; 
+        }
+
+        .author {
+            font-weight: bold;
+        }
+
+        .date {
+            font-style: italic;
+        }
+		
+.col-md-8.pl-4 {
+    height: 185px; /* Define a altura para 185px */
+    
+}
+
+
+
+.inline-news {
+    width: 800px; /* Define a largura para 800px */
+    margin-bottom: 1rem; /* Margem inferior para espaçar dos elementos abaixo */
+}
+.title a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d4c4c;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.inline-news .infos .author a, #ultimas-noticias .inline-news .infos .date a, #archive .inline-news .infos .author a, #archive .inline-news .infos .date a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4d4c4c;
+}
+
+.inline-news .hat, #archive .inline-news .hat {
+    background-color: #c3d053;
+}
+
+.inline-news .category, #ultimas-noticias .inline-news .tag, #ultimas-noticias .inline-news .hat, #archive .inline-news .category, #archive .inline-news .tag, #archive .inline-news .hat {
+    text-decoration: none;
+    background-color: #4278bf;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+.title-page, #archive .title-page {
+    font-size: 50px;
+    font-weight: 700;
+    color: #4d4c4c;
+    line-height: 1.2;
+}
+
+#base{
+	
+    margin-top: 20px;
+
+	
+}
+
+img {
+    border-radius: 8px; /* Ajuste o valor conforme necessário */
+}
+
+  .inline-news {
+    width: 100%;
+    max-width: 800px; /* Define o tamanho máximo como 800px */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    margin-bottom: 1rem; /* Margem inferior para espaçar dos elementos abaixo */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 800px) {
+    .inline-news {
+        padding: 0 10px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+    }
+}
+
