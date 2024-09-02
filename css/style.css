@@ -1,28 +1,49 @@
+/* PEDIR CHAT REORGANIZAR ORDENS E AGRUPAMENTOS CSS */
+
 /* ========== RESET ========== */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
   
 ul {
     list-style: none;
 }
 
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
 a {
     text-decoration: none; 
 }
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 
 /* ========== LOGO ========== */
 .logo-leouve {
     width: 160px;
-    height: 51px; /* Ajuste este valor conforme necessário */
+    height: 51px; 
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
 }
 
 #header {
@@ -45,19 +66,136 @@ body {
     justify-content: center;
 }
 
+#footer {
+    background-color: #333a3f;
+    color: #fff;
+}
+
+#footer .logo img {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+}
+
+#footer .socials ul li a img {
+    max-width: 25px;
+    height: 25px;
+}
+
+#footer .socials ul li {
+    margin-right: 20px;
+}
+
+#footer .socials ul {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0px;
+}
+
+#footer .menu ul li a {
+    color: #e2ffd1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#footer .menu ul {
+    list-style: none;
+}
+
+ol, ul {
+    box-sizing: border-box;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#footer .socials ui {
+    list-style: none;
+    display: flex;
+}
+
+#footer .menu h4 {
+    margin-bottom: 20px;
+    color: #ccc;
+    margin-left: -20px;
+}
+
+.pt-5, .py-5 {
+    padding-top: 3rem !important;
+}
+
+.mr-5, .mx-5 {
+    margin-right: 3rem !important;
+}
+
+.col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* .col-md-auto { TESTEEEE*/ 
+    /* border: solid 1px red; */
+    /* color: #000000; */
+    /* background-color: black; */
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* 901089030001-83 */
+/* } */
 /* #menu img, #logo img, #search img { */
     /* max-width: 100%; Garante que as imagens se ajustem ao tamanho da coluna */
 /* } */
 
 /* Estilo geral do container com a row e colunas */
 .container {
-    width: 100%;
+    /* width: 100%; */
+    min-width: 1320px;
     padding-right: 0px;
     padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
 }
 
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 /* Flexbox para a row, garantindo que os itens se alinhem e distribuam corretamente */
 .row {
     display: flex;
@@ -151,8 +289,8 @@ body {
         }
 
         .thumbnail img {
-            max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
-            height: auto; /* Mantém a proporção da imagem */
+            /* max-width: 100%; Ajusta a imagem ao tamanho do contêiner */
+            /* height: auto; Mantém a proporção da imagem */
         }
 
         .col-md-8 {
@@ -261,6 +399,11 @@ body {
     font-weight: 700;
     color: #4d4c4c;
     line-height: 1.2;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
 }
 
 #base{
