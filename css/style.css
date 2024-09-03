@@ -1,4 +1,4 @@
-/* PEDIR CHAT REORGANIZAR ORDENS E AGRUPAMENTOS CSS */
+/* PEDIR CHAT REORGANIZAR ORDENS E AGRUPAMENTOS CSS compartilhar html pra contextualizar e pedir para ordernar de mais específico para menos específico? */
 
 /* ========== RESET ========== */
 * {
@@ -82,6 +82,16 @@ footer {
     height: 25px;
 }
 
+#menu-rodape-1 li::before, #menu-rodape-2 li::before {
+    content: "•";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-bottom: 17px;
+    color: #e2ffd1;
+    }
+
 #footer .socials ul li {
     margin-right: 20px;
 }
@@ -133,15 +143,47 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
-#footer .socials ui {
+footer .socials ui {
     list-style: none;
     display: flex;
+}
+
+footer #footer-texts {
+    align-items: flex-start;
+}
+#footer #footer-row {
+    /* box-sizing: inherit; */
+    align-items: flex-start;
 }
 
 #footer .menu h4 {
     margin-bottom: 20px;
     color: #ccc;
-    margin-left: -20px;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+#footer .bottom {
+    background-color: #c3d053;
+}
+
+#footer .bottom p {
+    font-size: 13px;
+    color: #333a3f;
+    margin-bottom: 0px;
+}
+
+.pb-3, .py-3 {
+    padding-bottom: 1rem !important;
+}
+
+.pt-3, .py-3 {
+    padding-top: 1rem !important;
+}
+
+.mt-5, .my-5 {
+    margin-top: 3rem !important;
+    height: 120px;
 }
 
 .pt-5, .py-5 {
@@ -272,7 +314,8 @@ a:-webkit-any-link {
 
 /* Ajuste de padding e margens para colunas auto */
 .col-auto {
-    display: flex;
+    display: block; 
+    /* flex */
     align-items: center;
 }
  .inline-news {
