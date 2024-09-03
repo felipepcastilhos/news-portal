@@ -112,6 +112,12 @@ footer {
     list-style: none;
 }
 
+.bw2 p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
 ol, ul {
     box-sizing: border-box;
 }
@@ -143,6 +149,10 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
+footer .socials #footer-social {
+    margin-bottom: 0px !important;
+}
+
 footer .socials ui {
     list-style: none;
     display: flex;
@@ -151,9 +161,14 @@ footer .socials ui {
 footer #footer-texts {
     align-items: flex-start;
 }
+
 #footer #footer-row {
     /* box-sizing: inherit; */
     align-items: flex-start;
+}
+
+#footer .address p {
+    margin-bottom: 5px;
 }
 
 #footer .menu h4 {
@@ -161,6 +176,7 @@ footer #footer-texts {
     color: #ccc;
     margin-left: 20px;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 #footer .bottom {
@@ -190,10 +206,13 @@ footer #footer-texts {
     padding-top: 3rem !important;
 }
 
-.mr-5, .mx-5 {
-    margin-right: 3rem !important;
+#cidades {
+    margin-right: 0.5rem !important;
 }
 
+/* .mb-5 p {
+    margin-bottom: 0rem !important;
+} */
 .col-auto {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
