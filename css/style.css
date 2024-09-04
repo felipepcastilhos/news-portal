@@ -39,6 +39,9 @@ div {
 body {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans",sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
 }
 
 footer {
@@ -58,6 +61,18 @@ footer {
     position: sticky;
     top: 0;
     left: 0;
+}
+
+#ultimas-noticias .inline-news .title a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4d4c4c;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #menu, #logo, #search {
@@ -375,10 +390,11 @@ footer #footer-texts {
         }
 
         /* Estilo da hat */
-        .hat {
-            font-style: italic;
-            color: #666; /* Ajuste a cor conforme necessário */
-        }
+        /* .hat { */
+            /* font-style: normal; */
+            /* font-style: italic; */
+            /* color: #c3d053; Ajuste a cor conforme necessário */
+        /* } */
 
         /* Estilo do título */
         .title {
@@ -391,20 +407,12 @@ footer #footer-texts {
         }
 
         
-        .infos {
+        #ultimas-noticias .inline-news .infos {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            /* align-items: center;
             font-size: 0.875rem; 
-            color: #666; 
-        }
-
-        .author {
-            font-weight: bold;
-        }
-
-        .date {
-            font-style: italic;
+            color: #4d4c4c;  */
         }
 		
 .col-md-8.pl-4 {
@@ -418,7 +426,7 @@ footer #footer-texts {
     width: 800px; /* Define a largura para 800px */
     margin-bottom: 1rem; /* Margem inferior para espaçar dos elementos abaixo */
 }
-.title a {
+/* .title a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -428,20 +436,21 @@ footer #footer-texts {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} */
 
-.inline-news .infos .author a, #ultimas-noticias .inline-news .infos .date a, #archive .inline-news .infos .author a, #archive .inline-news .infos .date a {
+#ultimas-noticias .inline-news .infos .author a, #ultimas-noticias .inline-news .infos .date {
     text-decoration: none;
     font-size: 13px;
     font-weight: 400;
     color: #4d4c4c;
 }
 
-.inline-news .hat, #archive .inline-news .hat {
+#ultimas-noticias .inline-news .row .hat {
+    font-style: normal;
     background-color: #c3d053;
 }
 
-.inline-news .category, #ultimas-noticias .inline-news .tag, #ultimas-noticias .inline-news .hat, #archive .inline-news .category, #archive .inline-news .tag, #archive .inline-news .hat {
+.inline-news .category, #ultimas-noticias .inline-news .tag, #ultimas-noticias .inline-news .hat {
     text-decoration: none;
     background-color: #4278bf;
     color: #fff;
@@ -456,7 +465,7 @@ footer #footer-texts {
 }
 
 
-.title-page, #archive .title-page {
+#ultimas-noticias .title-page {
     font-size: 50px;
     font-weight: 700;
     color: #4d4c4c;
