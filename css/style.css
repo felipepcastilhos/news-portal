@@ -51,6 +51,56 @@ footer {
 
 #header {
     background-color: #c3d053;
+    /* height: 54px; */
+    padding: 12px 0;
+}
+
+#header #radios a:last-child {
+    margin-right: 0;
+}
+
+#header #radios a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+#header #radios a.off {
+    color: #7c7c7c;
+}
+
+#header #player form select {
+    border-radius: 25px;
+    border-color: #fff;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    padding: 5px 10px;
+    max-width: 230px;
+}
+
+#header #player form button {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#radios {
+    flex: 1; /* Ocupa o espaço restante à esquerda */
+    white-space: nowrap; /* Garante que o conteúdo interno não quebre para uma nova linha */
+}
+
+#player {
+    flex: 0 1 auto; /* Mantém a largura automática, ocupando apenas o espaço necessário */
+    display: flex;
+    align-items: center;
 }
 
 #nav {
@@ -291,10 +341,10 @@ footer #footer-texts {
 /* Estilo para o swiper */
 .swiper {
     width: 100%;
-    overflow: hidden; /* Garante que o conteúdo não vaze */
+    /* overflow: hidden; Garante que o conteúdo não vaze */
 }
 
-.swiper-wrapper {
+#header-row {
     display: flex;
     flex-direction: row; /* Alinha os slides horizontalmente */
 }
@@ -308,7 +358,6 @@ footer #footer-texts {
     text-decoration: none;
     color: #000; /* Cor do texto dos links */
     display: block;
-    padding: 5px; /* Adiciona algum padding ao link */
 }
 
 .swiper-slide a:hover {
@@ -475,6 +524,7 @@ footer #footer-texts {
 .justify-content-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
+    min-width: 900px;
 }
 
 #base{
