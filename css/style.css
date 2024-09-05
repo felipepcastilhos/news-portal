@@ -316,14 +316,14 @@ footer #footer-texts {
     margin-left: auto;
 }
 
-.row {
+/* .row { */
     /* display: -ms-flexbox; */
-    display: flex;
+    /* display: flex; */
     /* -ms-flex-wrap: wrap;
     flex-wrap: wrap; */
     /* margin-right: -15px; */
     /* margin-left: -15px; */
-}
+/* } */
 /* Flexbox para a row, garantindo que os itens se alinhem e distribuam corretamente */
 .row {
     display: flex;
@@ -766,3 +766,191 @@ img {
     position: absolute;
     bottom: 50px;
 }
+
+/* =========== NOTÍCIA 1 ===========*/
+/* #search-form {
+    background-color: #4278bf;
+    padding: 20px;
+    border-top: 1px solid #c3d053;
+    width: 100%;
+    display: none;
+}
+
+#search-form form {
+    display: flex;
+}
+
+#search-form form input[type=text] {
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+
+#search-form form button {
+    background-color: #c3d053;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    padding: 0 20px;
+    cursor: pointer;
+} */
+
+#single .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #4d4c4c;
+    line-height: 1.2;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+#single .excerpt {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#single .infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+}
+
+#single .infos .author {
+    display: flex;
+}
+
+
+#single .infos .author .thumbnail {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #4278bf;
+}
+
+
+#single .infos .author .thumbnail img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 2px solid #4278bf;
+}
+
+#single .infos .author .name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4c4c;
+}
+
+#single .infos .author .name a {
+    color: #4d4c4c;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#single .infos .author .date {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#single .infos .sharer p {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#single .infos .sharer .socials {
+    display: flex;
+}
+
+
+#single .infos .sharer .socials a {
+    background-color: #4278bf;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#single .infos .sharer .socials a img {
+    max-width: 22px;
+    height: auto;
+}
+
+#audiome-container {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+#audiome-ref {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 3px;
+    font-family: arial;
+    color: var(--client-color);
+}
+
+#audiomeouca {
+    font-size: 13px;
+    color: #000 !important;
+    cursor: pointer;
+    font-family: arial;
+    text-transform: lowercase;
+}
+
+#audiomelogo {
+    font-size: 13px;
+    color: #000 !important;
+    cursor: pointer;
+    font-family: arial;
+    text-transform: lowercase;
+    background-color: #fff;
+}
+
+
+#audiome-player {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    transform: translate(-50%);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
