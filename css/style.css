@@ -209,11 +209,11 @@ h4 {
     unicode-bidi: isolate;
 }
 
-a:-webkit-any-link {
+/* a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: underline;
-}
+} */
 
 footer .socials #footer-social {
     margin-bottom: 0px !important;
@@ -334,8 +334,16 @@ footer #footer-texts {
     /* justify-content: space-between;  */
     /* Espaça uniformemente os itens */
     align-items: center; /* Alinha verticalmente os itens */
-    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    overflow-x: auto; /* Adiciona rolagem horizontal se necessário // estava como unset?*/
+    height: auto;
+    max-width: 100%;
 }
+
+#single .container #bodytextinfo {
+    /* height: 2539px !important; */
+    height: 2200px !important;
+    /* AQUIIIIII E TAMBEM VERIFICAR AS MARGENS ESQUERDA E DIREITA DO SECTION SINGLE OU DIV CONTAINER DO SINGLE*/
+        }
 
 /* Ajustes específicos para a coluna com swiper */
 .col-8 {
@@ -1085,6 +1093,25 @@ img {
     color: #4d4c4c;
     }
 
+#more-related .title-section, #more-author .title-section {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    }
 
+#more-related .title-section a, #more-author .title-section a {
+    font-size: inherit;
+    color: #333;
+    text-decoration: none;
+    }
 
+#more-related .title a, #more-author .title a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    }
 
+section #single {
+    height: 2546.875px !important;
+}
