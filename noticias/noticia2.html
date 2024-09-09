@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Últimas Notícias - PortalLeouve</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <header id="header">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-8" id="radios">
+              <div
+                class="swiper swiperRadios swiper-initialized swiper-horizontal swiper-pointer-events" id="header-row"
+              >
+                <div
+                  class="swiper-slide swiper-slide-duplicate"
+                  data-swiper-slide-index="0"
+                  role="group"
+                  aria-label="1 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a href="https://radioviva.com.br/" target="_blank" class=""
+                    >Rádio Viva</a
+                  >
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate"
+                  data-swiper-slide-index="1"
+                  role="group"
+                  aria-label="2 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a
+                    href="https://jovempan.com.br/afiliada/serragaucha-fm"
+                    target="_blank"
+                    class="off"
+                    >Jovem Pan Serra Gaúcha</a
+                  >
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                  data-swiper-slide-index="2"
+                  role="group"
+                  aria-label="3 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a
+                    href="https://bandserragaucha.com.br/"
+                    target="_blank"
+                    class=""
+                    >Rádio Band Serra Gaúcha</a
+                  >
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                  data-swiper-slide-index="3"
+                  role="group"
+                  aria-label="4 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a
+                    href="https://jovempan.com.br/afiliada/grandepoa-fm"
+                    target="_blank"
+                    class=""
+                    >Jovem Pan Grande POA</a
+                  >
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                  data-swiper-slide-index="4"
+                  role="group"
+                  aria-label="5 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a
+                    href="https://olaserragaucha.com.br/"
+                    target="_blank"
+                    class="off"
+                    >Olá Serra Gaúcha</a
+                  >
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate"
+                  data-swiper-slide-index="5"
+                  role="group"
+                  aria-label="6 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a
+                    href="https://radiovinhedos.com.br/"
+                    target="_blank"
+                    class=""
+                    >Rádio Vinhedos</a
+                  >
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate"
+                  data-swiper-slide-index="6"
+                  role="group"
+                  aria-label="7 / 10"
+                  style="margin-right: 10px"
+                >
+                  <a
+                    href="https://radiotalian.com.br/"
+                    target="_blank"
+                    class="off"
+                    >Rádio
+                  </a>
+                </div>
+                <span
+                  class="swiper-notification"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                ></span>
+              </div>
+            </div>
+            <div class="col-auto" id="player">
+              <form id="form-radio">
+                <select name="radio" id="radios-select">
+                  <option
+                    value="https://r6.ciclano.io:15030/stream"
+                    selected=""
+                  >
+                    Rádio Viva 94.5
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15002/tunein/viva945-stream.pls?sid=1"
+                  >
+                    Rádio Jovem Pan Serra Gaucha 92.5
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15004/tunein/viva945-stream.pls?sid=1"
+                  >
+                    Rádio Jovem Pan Grande POA 90.7
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15022/tunein/viva945-stream.pls?sid=1"
+                  >
+                    Rádio Band Serra Gaúcha 106.1
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15012/tunein/viva945-stream.pls?sid=1"
+                  >
+                    Rádio Amizade 89.1
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15014/tunein/viva945-stream.pls?sid=1"
+                  >
+                    Rádio Conegliano (it) 90.6
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15028/tunein/viva945-stream.pls?sid=1"
+                  >
+                    Rádio Vinhedos 87.5
+                  </option>
+                  <option
+                    value="https://r6.ciclano.io:15020/tunein/querencia-stream.pls?sid=1"
+                  >
+                    Rádio Querência
+                  </option>
+                </select>
+                <button type="submit">
+                  <img
+                    src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/play-cinza.svg"
+                    alt="Tocar"
+                  />
+                </button>
+              </form>
+            </div>
+            <div class="col-auto" id="apps">
+              <a
+                href="https://play.google.com/store/apps/details?id=app.mobihaus.leouve"
+                target="_blank"
+              >
+                <img
+                  src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/android.svg"
+                  alt="Android"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/leouve/id1563670416"
+                target="_blank"
+              >
+                <img
+                  src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/apple.svg"
+                  alt="ios"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav id="nav">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div id="menu">
+              <img
+                src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/menu.svg"
+                alt="Menu"
+              />
+            </div>
+            <div id="logo">
+              <a href="/index.html">
+                <img
+                  src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/leouve.svg"
+                  alt="Leouve"
+                  class="logo-leouve"
+                />
+              </a>
+            </div>
+            <div id="search">
+              <img
+                src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/search.svg"
+                alt="Buscar"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--  -->
+      <!-- <div id="search-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form method="get" id="searchform" action="https://leouve.com.br">
+                <input class="text" type="text" placeholder="Faça uma busca por assunto ou palavra-chave" name="s" id="s">
+                <button type="submit"> Buscar </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <section id="single">
+        <div class="container" style="
+    height: 2500px;
+    padding-left: 100px;
+    padding-right: 100px;>
+          <div class="row" id="bodytextinfo" style="
+    height: 3000px;
+">
+            <div class="col-md-12">
+              <h1 class="title mb-4">Vendas no Pavilhão da Agricultura Familiar da Expointer já superam R$ 7 milhões</h1>
+              <div class="excerpt mb-4">
+                <p>Valor já representa mais de 20% em relação ao comercializado em 2023</p>
+              </div>
+              <div class="infos pb-4 mb-5">
+                <div class="author">
+                  <div class="thumbnail">
+                    <img width="43" height="43" src="https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar-48x48.jpg" class="avatar avatar-43 photo" alt="" decoding="async" srcset="https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar-48x48.jpg 48w, https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar-300x300.jpg 300w, https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar-150x150.jpg 150w, https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar-24x24.jpg 24w, https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar-96x96.jpg 96w, https://leouve.com.br/wp-content/uploads/2023/09/leouve-avatar.jpg 400w" sizes="(max-width: 43px) 100vw, 43px">                            
+                  </div>
+                  <div>
+                    <div class="name">
+                        Publicado por <a href="https://leouve.com.br/author/fernando-santos" title="Posts de Fernando Santos" rel="author">Fernando Santos</a>                                
+                    </div>
+                    <div class="date">
+                        19:12 - 31/08/2024                                
+                    </div>
+                  </div>
+                </div>
+                <div class="sharer">
+                  <p>Compartilhar:</p>
+                  <div class="socials">
+                    <a href="https://www.facebook.com/sharer.php?u=https://leouve.com.br/ultimas/brasil-conquista-oito-medalhas-no-terceiro-dia-de-paralimpiadas-paris-2024" target="_blank">
+                      <img src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?text=Brasil conquista oito medalhas no terceiro dia de Paralimpíadas Paris 2024url=https://leouve.com.br/ultimas/brasil-conquista-oito-medalhas-no-terceiro-dia-de-paralimpiadas-paris-2024" target="_blank">
+                      <img src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="https://web.whatsapp.com/send?text=https://leouve.com.br/ultimas/brasil-conquista-oito-medalhas-no-terceiro-dia-de-paralimpiadas-paris-2024" target="_blank">
+                      <img src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/whatsapp.svg" alt="Whatsapp">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="audiome-container">
+                <div id="audiome-ref">
+                  <table style="width: 100%; border-collapse: inherit; margin: 0px; border: 0px;">
+                    <tbody>
+                      <tr>
+                        <td style="text-align: left; padding: 0px; border: 0px">
+                          <div id="audiomeouca" class="audiomeref">ouça este conteúdo</div>
+                        </td>
+                        <td style="text-align: right; padding: 0px; border: 0px;">
+                          <div id="audiomelogo">readme</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="audiome-player">
+                  <!-- INSERIR IMAGEM DO PRINTSCREEN DA ONDA DO AUDIO -->
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="st-placement standard_1 inImage" id="standard_1" style="direction: ltr; all: initial !important;">
+                  <style>
+                    #standard_1.st-placement .st-reset {
+                        all: unset;
+                        all: initial;
+                        max-width: unset !important;
+                        max-height: unset !important;
+                        position: absolute;
+                        z-index: 2147483647;
+                    }
+                    #standard_1.st-placement style {
+                        display: none !important;
+                    }
+      
+                    #standard_1.st-placement script {
+                        display: none !important;
+                    }
+                    .st-adunit-intop {
+                        z-index: 9999999999 !important;
+                    }
+                  </style>
+                  <!-- <div class="st-adunit st-adunit-tagged st-reset st-show" style="height: 0px; left: 150px; position: absolute; top: 483px; width: 0px; z-index: 2147483647;">
+                    <div class="st-adunit-ad st-reset">
+                      <div class="st-display-render st-reset open 300x600" style="position: absolute; pointer-events: none;">
+                        <div class="st-canvas st-reset vertical-static" style="height: 428px; width: 640px; opacity: 1; transition: opacity 1s; pointer-events: none;">
+                          <div class="x-to-close st-reset" style="bottom: initial; cursor: pointer; height: 18px; left: 428px; position: absolute; top: 4px; width: 18px; z-index: 2147483647; pointer-events: initial;">
+                            <style>
+                              .st-placement .x-to-close.st-reset {
+                                height: 18px !important;
+                                width: 18px !important;
+                              }
+                            </style>
+                            <svg viewBox="0 0 83.6 83.6" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M39.3 78.5C17.6 78.5 0 61 0 39.3 0 17.6 17.6 0 39.3 0 61 0 78.5 17.6 78.5 39.3 78.5 61 61 78.5 39.3 78.5" fill="#1D1D1B" opacity="0.7"></path>
+                              <path d="M21.6 56.9l34.8-34.8M56.4 56.9L21.6 22.1" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 6.353;"></path>
+                            </svg>
+                          </div>
+                          <style>
+                            #seedtag_creative_573 {
+                                border: initial !important;
+                                height: 600px !important;
+                                left: 340px !important;
+                                position: absolute !important;
+                                top: -172px !important;
+                                bottom: initial !important;
+                                width: 300px !important;
+                                transform: scale3d(0.7133333333333334, 0.7133333333333334, 1) !important;
+                                transform-origin: right bottom !important;
+                                pointer-events: initial !important;
+                                z-index: 2147483646 !important
+                            }
+                          </style>
+                          <iframe id="seedtag_creative_573" title="seedtag_creative_573" name="seedtag_creative" scrolling="no" class="st-reset">
+                            
+                          </iframe>
+                        </div>
+                      </div>
+                    </div>
+                   </div> -->
+                  <div style="height: 0px; left: 150px; position: absolute; top: 526px; width: 0px; z-index: 2147483647;" class="st-adunit st-adunit-tagged st-reset st-show">
+                    <div class="st-adunit-ad st-reset">
+                      <div style="position: absolute; pointer-events: none;" class="st-display-render st-reset open 728x90">
+                        <div style="height: 426px; width: 640px; opacity: 1; transition: opacity 1s ease 0s; pointer-events: none;" class="st-canvas st-reset horizontal-static">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <img width="945" height="532" src="https://leouve.com.br/wp-content/uploads/2024/08/31172931_2150204_GD.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://leouve.com.br/wp-content/uploads/2024/08/31172931_2150204_GD.jpg 945w, https://leouve.com.br/wp-content/uploads/2024/08/31172931_2150204_GD-300x169.jpg 300w, https://leouve.com.br/wp-content/uploads/2024/08/31172931_2150204_GD-768x432.jpg 768w, https://leouve.com.br/wp-content/uploads/2024/08/31172931_2150204_GD-150x84.jpg 150w" sizes="(max-width: 945px) 100vw, 945px">
+              </div>
+              <p class="thumbnail-caption">
+                Foto: Silvio Ávila/CPB                    
+              </p>
+              <article id="post-content" class="my-5">
+               <p>No total, 413 empreendimentos expõem produtos no pavilhão, um recorde que demonstra o crescimento contínuo do setor. Produtores como Giovana Vidor, de Santa Lúcia de Piaí, distrito de Caxias do Sul.</p>
+<p>Desde o início da feira, ela diz que precisou repor três vezes o estoque de biscoitos artesanais. Na banca 292, a agroindústria de  expõe uma ampla gama de produtos coloniais, incluindo pães, biscoitos, chimias, conservas, doces e antepastos.</p>
+<p>Giovana, que comanda a produção da propriedade com a mãe, Anna Vidor, levou para a Expointer uma novidade que já se tornou um sucesso de vendas: um biscoito amanteigado de limão siciliano. A produtora comemora a realização desta edição, ponto alto de suas vendas no ano.</p>
+<p>“Além de ser uma vitrine, a Expointer representa 20% do meu faturamento anual. Só vendo meus produtos em feiras, então esse espaço é extremamente importante", conta.</p>
+<p>O secretário de Desenvolvimento Rural, Vilson Covatti, avalia o sucesso de vendas do pavilhão,</p>
+<p>“O aumento nas vendas é um indicativo da força e da resiliência desses produtores, especialmente diante das recentes calamidades que afetaram o Estado”, analisa.</p>
+<p>Com o encerramento da feira se aproximando, a expectativa é de que as vendas continuem em alta. O PAF ainda promete muitas oportunidades para quem busca qualidade e originalidade nos produtos da agricultura familiar gaúcha.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /// -->
+      <section id="more-related" class="mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto">
+              <h2 class="title-section mb-4">Notícias relacionadas</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">                      
+              <div class="swiper swiperRelacionadas swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-b797f551020851aa4" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">                             
+                  <div class="swiper-slide swiper-slide-active" style="width: 190px; margin-right: 30px;" role="group" aria-label="1 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-conquista-quatro-ouros-e-mantem-quarto-lugar-no-quadro-de-medalhas-nas-paralimpiadas">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/09/b1f28bc2-32c7-4214-afdb-fc3c56ee69b8-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="Paralimpíadas" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            CONFIRA
+                          </div>
+                        </div>
+                      </a>                    
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-conquista-quatro-ouros-e-mantem-quarto-lugar-no-quadro-de-medalhas-nas-paralimpiadas">
+                          Brasil conquista quatro ouros e mantém quarto lugar no quadro de medalhas nas Paralimpíadas                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>                             
+                  <div class="swiper-slide swiper-slide-next" style="width: 190px; margin-right: 30px;" role="group" aria-label="2 / 10">
+                    <div class="news">   
+                      <a href="https://leouve.com.br/esportesbr/futebol/juventude-perde-para-o-inter-no-jaconi-pelo-brasileirao">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/09/0cfb91ab-fbff-43cb-aa30-10c6ab0b6288-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="Juventude" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            DUELO GAÚCHO                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/futebol/juventude-perde-para-o-inter-no-jaconi-pelo-brasileirao">
+                          Juventude perde para o Inter no Jaconi pelo Brasileirão                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="3 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/esportesbr/paralimpiadas/paralimpiadas-2024-brasil-alcanca-400a-medalha-e-sobe-quatro-vezes-ao-podio-em-paris">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/09/1fd8a022-310d-44d4-8a76-43254e30cec5-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="Paralimpíadas 2024" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            400ª medalha                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/paralimpiadas/paralimpiadas-2024-brasil-alcanca-400a-medalha-e-sobe-quatro-vezes-ao-podio-em-paris">
+                          Paralimpíadas 2024: Brasil alcança 400ª medalha e sobe quatro vezes ao pódio em Paris                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="4 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/ultimas/no-retorno-a-arena-gremio-leva-virada-nos-acrescimos-e-perde-por-3-a-2-para-o-atletico-mg">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-01-at-13.21.21-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="GRÊMIO" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            SÉRIE A                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/ultimas/no-retorno-a-arena-gremio-leva-virada-nos-acrescimos-e-perde-por-3-a-2-para-o-atletico-mg">
+                          No retorno à Arena, Grêmio leva virada nos acréscimos e perde por 3 a 2 para o Atlético-MG                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="5 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/esportesbr/juventude-e-inter-se-enfrentam-neste-domingo-pelo-brasileirao-no-jaconi">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/433103392_768469318594611_2459515055903201379_n-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            BRASILEIRÃO                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/juventude-e-inter-se-enfrentam-neste-domingo-pelo-brasileirao-no-jaconi">
+                          Juventude e Inter se enfrentam neste domingo, pelo Brasileirão, no Jaconi                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="6 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-conquista-dupla-medalha-no-atletismo-durante-as-paralimpiadas">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-31-at-17.08.01-e1725134979384-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            OURO e prata                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-conquista-dupla-medalha-no-atletismo-durante-as-paralimpiadas">
+                          Brasil conquista dupla medalha no atletismo durante as Paralimpíadas                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="7 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-e-ouro-nos-100m-costas-da-natacao-nas-paralimpiadas-2024">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-31-at-13.24.49-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            Natação                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-e-ouro-nos-100m-costas-da-natacao-nas-paralimpiadas-2024">
+                          Brasil é ouro nos 100m costas da natação nas Paralimpíadas 2024                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="8 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/cidades/porto-alegre/apos-mais-de-quatro-meses-gremio-volta-a-jogar-na-arena-neste-domingo">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/Luciano-Lanes-PMPA-200x160.webp" class="attachment-news-small size-news-small wp-post-image" alt="Após mais de quatro meses, Grêmio volta a jogar na Arena neste domingo" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            Brasileirão                                                     
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/cidades/porto-alegre/apos-mais-de-quatro-meses-gremio-volta-a-jogar-na-arena-neste-domingo">
+                          Após mais de quatro meses, Grêmio volta a jogar na Arena neste domingo                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="9 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/ultimas/resumo-do-esporte-gremio-recebe-o-atletico-mg-na-arena-juventude-e-inter-duelam-pelo-brasileirao">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/lg-noticias-elenco-gremista-faz-nova-sessa-o-de-treino-com-foco-no-atla-tico-mg-40700-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="Grêmio" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            ESPORTE                                                     
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/ultimas/resumo-do-esporte-gremio-recebe-o-atletico-mg-na-arena-juventude-e-inter-duelam-pelo-brasileirao">
+                          Resumo do Esporte: Grêmio recebe o Atlético-MG na Arena; Juventude e Inter duelam pelo Brasileirão                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" style="width: 190px; margin-right: 30px;" role="group" aria-label="10 / 10">
+                    <div class="news">
+                      <a href="https://leouve.com.br/brasil/paralimpiadas-2024-brasil-brilha-no-atletismo-e-conquista-o-3o-lugar-no-quadro-geral">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/85fe817c-8cb8-4f83-8a62-14db7ca520fa-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="Paralimpíadas" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            OURO E BRONZE                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/brasil/paralimpiadas-2024-brasil-brilha-no-atletismo-e-conquista-o-3o-lugar-no-quadro-geral">
+                          Paralimpíadas 2024: Brasil brilha no atletismo e conquista o 3º lugar no quadro geral                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div id="swiper-more-related" class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-b797f551020851aa4" aria-disabled="false"></div>
+                <!-- <div id="swiper-more-related" class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-b797f551020851aa4" aria-disabled="true"></div> -->
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="more-author" class="mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-auto">
+              <h2 class="title-section mb-4">Mais de <a href="https://leouve.com.br/author/claudia-debona" title="Posts de Cláudia Debona" rel="author">Cláudia Debona</a></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="swiper swiperRelacionadas swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-c2285e301710698310" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                  <div class="swiper-slide swiper-slide-active" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="1 / 7">
+                    <div class="news">
+                      <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-conquista-dupla-medalha-no-atletismo-durante-as-paralimpiadas">
+                        <div class="thumbnail mb-3">
+                          <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-31-at-17.08.01-e1725134979384-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            OURO e prata                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-conquista-dupla-medalha-no-atletismo-durante-as-paralimpiadas">
+                          Brasil conquista dupla medalha no atletismo durante as Paralimpíadas                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                <div class="swiper-slide swiper-slide-next" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="2 / 7">
+                  <div class="news">
+                    <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-e-ouro-nos-100m-costas-da-natacao-nas-paralimpiadas-2024">
+                      <div class="thumbnail mb-3">
+                        <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-31-at-13.24.49-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                        <div class="cartola">
+                          Natação                                                    
+                        </div>
+                      </div>
+                    </a>
+                    <h3 class="title">
+                      <a href="https://leouve.com.br/esportesbr/paralimpiadas/brasil-e-ouro-nos-100m-costas-da-natacao-nas-paralimpiadas-2024">
+                        Brasil é ouro nos 100m costas da natação nas Paralimpíadas 2024                                            
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="3 / 7">
+                  <div class="news">
+                    <a href="https://leouve.com.br/cidades/bento-goncalves/clube-esportivo-bento-goncalves-celebra-105-anos-com-estrategia-para-voltar-a-elite-do-gauchao">
+                      <div class="thumbnail mb-3">
+                        <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-09.32.23-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                        <div class="cartola">
+                          ANIVERSÁRIO                                                    
+                        </div>
+                      </div>
+                    </a>
+                    <h3 class="title">
+                      <a href="https://leouve.com.br/cidades/bento-goncalves/clube-esportivo-bento-goncalves-celebra-105-anos-com-estrategia-para-voltar-a-elite-do-gauchao">
+                        Clube Esportivo Bento Gonçalves celebra 105 anos com estratégia para voltar à elite do Gauchão                                            
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="4 / 7">
+                  <div class="news">
+                    <a href="https://leouve.com.br/esportesbr/rugby/farrapos-rugby-de-bento-goncalves-nao-segura-pressao-fora-de-casa-e-perde-para-o-jacarei-sp">
+                      <div class="thumbnail mb-3">
+                        <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/Jacarei-x-Farrapos-Rogerio-Souza-Jacarei-Rugby-3-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                        <div class="cartola">
+                          ESPORTE                                                    
+                        </div>
+                      </div>
+                    </a>
+                    <h3 class="title">
+                      <a href="https://leouve.com.br/esportesbr/rugby/farrapos-rugby-de-bento-goncalves-nao-segura-pressao-fora-de-casa-e-perde-para-o-jacarei-sp">
+                        Farrapos Rugby, de Bento Gonçalves, não segura pressão fora de casa e perde para o Jacareí-SP                                            
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="5 / 7">
+                  <div class="news">
+                    <a href="https://leouve.com.br/esportesbr/padel/dupla-caxiense-de-padel-recebe-certificado-amigo-do-esporte">
+                      <div class="thumbnail mb-3">
+                        <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune-200x160.jpg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune-200x160.jpg 200w, https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune-300x239.jpg 300w, https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune-1024x817.jpg 1024w, https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune-768x613.jpg 768w, https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune-150x120.jpg 150w, https://leouve.com.br/wp-content/uploads/2024/08/Amigo-do-Esporte-Fonseca-e-Ruschel-Cristiano-Nune.jpg 1250w" sizes="(max-width: 200px) 100vw, 200px">
+                        <div class="cartola">
+                          Esporte                                                    
+                        </div>
+                      </div>
+                    </a>
+                    <h3 class="title">
+                      <a href="https://leouve.com.br/esportesbr/padel/dupla-caxiense-de-padel-recebe-certificado-amigo-do-esporte">
+                        Dupla caxiense de padel recebe certificado Amigo do Esporte                                            
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="6 / 7">
+                  <div class="news">
+                    <a href="https://leouve.com.br/cidades/bento-goncalves/jovens-atletas-de-bento-goncalves-buscam-apoio-para-disputar-campeonato-mundial-de-jiu-jitsu-no-japao">
+                      <div class="thumbnail mb-3">
+                        <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-07-at-15.16.04-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="Jovens atletas de Bento Gonçalves buscam apoio para disputar campeonato mundial de jiu-jitsu no Japão" decoding="async" loading="lazy">
+                        <div class="cartola">
+                          Esporte                                                    
+                        </div>
+                      </div>
+                    </a>
+                    <h3 class="title">
+                      <a href="https://leouve.com.br/cidades/bento-goncalves/jovens-atletas-de-bento-goncalves-buscam-apoio-para-disputar-campeonato-mundial-de-jiu-jitsu-no-japao">
+                        Jovens atletas de Bento Gonçalves buscam apoio para disputar campeonato mundial de jiu-jitsu no Japão                                            
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide" style="width: 190.166667px; margin-right: 30px;" role="group" aria-label="7 / 7">
+                  <div class="news">
+                    <a href="https://leouve.com.br/esportesbr/rugby/de-bento-goncalves-para-o-brasil-a-trajetoria-do-primeiro-titulo-nacional-do-farrapos-rugby">
+                      <div class="thumbnail mb-3">
+                        <img width="200" height="160" src="https://leouve.com.br/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-05-at-13.26.59-200x160.jpeg" class="attachment-news-small size-news-small wp-post-image" alt="" decoding="async" loading="lazy">
+                          <div class="cartola">
+                            conquista                                                    
+                          </div>
+                        </div>
+                      </a>
+                      <h3 class="title">
+                        <a href="https://leouve.com.br/esportesbr/rugby/de-bento-goncalves-para-o-brasil-a-trajetoria-do-primeiro-titulo-nacional-do-farrapos-rugby">
+                          De Bento Gonçalves para o Brasil: a trajetória do primeiro título nacional do Farrapos Rugby                                            
+                        </a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div id="swiper-more-related" class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-c2285e301710698310" aria-disabled="false"></div>
+                <div id="swiper-more-related" class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-c2285e301710698310" aria-disabled="true"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer id="footer" class="pt-5">
+        <div class="container">
+          <div class="row justify-content-between" id="footer-texts">
+            <div class="col-md-auto">
+              <div class="logo mb-5">
+                <a href="https://leouve.com.br">
+                  <img
+                    src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/leouve.svg"
+                    alt="Leouve"
+                  />
+                </a>
+              </div>
+              <div class="address mb-5">
+                <p>Rua Marechal Deodoro, 101 - 7º andar Sala 701</p>
+                <p>Centro - Bento Gonçalves - RS</p>
+                <p>Fone/Fax: (54) 3455-3999</p>
+              </div>
+              <div class="address mb-5">
+                <p>Av. Rio Branco, 840 - 8º andar</p>
+                <p>Rio Branco - Caxias do Sul - RS</p>
+                <p>Fone:(54) 3224-7889</p>
+              </div>
+              <div class="address mb-5">
+                <p>WhatsApp: (54) 99692-3999</p>
+                <p>Contato: leouve@gruporscom.com.br</p>
+              </div>
+              <div class="socials">
+                <ul id="footer-social">
+                  <li>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=app.mobihaus.leouve"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/google-play.svg"
+                        alt="google"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/portalleouve/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/facebook-square.svg"
+                        alt="facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/portalleouve/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/instagram.svg"
+                        alt="instagram"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/leouve"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/twitter-square.svg"
+                        alt="twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/leouve/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/linkedin-square.svg"
+                        alt="linkedin"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://t.me/canal_leouve"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/telegram.svg"
+                        alt="telegram"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/user/Leouve/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/youtube-square.svg"
+                        alt="youtube"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://bit.ly/2UwKGh1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/camera.svg"
+                        alt="ciclano"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://anchor.fm/leouve"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/anchor.svg"
+                        alt="anchor"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://open.spotify.com/show/4zNF0YArnQ8SFsGqxHI05X"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/spotify.svg"
+                        alt="spotify"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=app.mobihaus.leouve"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/android.svg"
+                        alt="android"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://apps.apple.com/us/app/leouve/id1563670416"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/apple.svg"
+                        alt="apple"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@portalleouve"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      ><img
+                        src="https://leouve.com.br/wp-content/themes/new-leouve/assets/img/tiktok-icon.svg"
+                        alt="tiktok"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-auto">
+              <div class="row" id="footer-row">
+                <div class="col-auto menu mr-5" id="cidades">
+                  <h4>Cidades:</h4>
+                  <div class="menu-rodape-1-container">
+                    <ul id="menu-rodape-1" class="menu">
+                      <li
+                        id="menu-item-564876"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-564876"
+                      >
+                        <a
+                          href="https://leouve.com.br/categoria/cidades/caxias-do-sul"
+                          >Caxias do Sul</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-564877"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-564877"
+                      >
+                        <a
+                          href="https://leouve.com.br/categoria/cidades/bento-goncalves"
+                          >Bento Gonçalves</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-564879"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-564879"
+                      >
+                        <a
+                          href="https://leouve.com.br/categoria/cidades/farroupilha"
+                          >Farroupilha</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-564880"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-564880"
+                      >
+                        <a
+                          href="https://leouve.com.br/categoria/cidades/flores-da-cunha"
+                          >Flores da Cunha</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-564881"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-564881"
+                      >
+                        <a
+                          href="https://leouve.com.br/categoria/cidades/garibaldi"
+                          >Garibaldi</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-564878"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-564878"
+                      >
+                        <a
+                          href="https://leouve.com.br/categoria/cidades/carlos-barbosa"
+                          >Carlos Barbosa</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-auto menu">
+                  <h4>Editorias:</h4>
+                  <div class="menu-rodape-2-container">
+                    <ul id="menu-rodape-2" class="menu">
+                      <li
+                        id="menu-item-559480"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559480"
+                      >
+                        <a href="https://leouve.com.br/categoria/seguranca"
+                          >Segurança</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-559481"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559481"
+                      >
+                        <a href="https://leouve.com.br/categoria/blogs"
+                          >Blogs</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-559482"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559482"
+                      >
+                        <a href="https://leouve.com.br/categoria/servicos"
+                          >Serviços</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-559483"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-558392 current_page_item menu-item-559483"
+                      >
+                        <a
+                          href="https://leouve.com.br/ultimas-noticias"
+                          aria-current="page"
+                          >Últimas Notícias</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-559484"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559484"
+                      >
+                        <a href="https://leouve.com.br/categoria/politica"
+                          >Política</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-559485"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559485"
+                      >
+                        <a href="https://leouve.com.br/categoria/negocios"
+                          >Negócios e Mercado</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-559486"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-559486"
+                      >
+                        <a href="https://leouve.com.br/categoria/esportesbr"
+                          >Esportes.BR</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom mt-5">
+          <div class="container">
+            <div class="row justify-content-center py-3">
+              <div class="col-md-auto text-center">
+                <p>© Todos os direitos reservados</p>
+                <p>Grupo RSCOM e Portal Leouve 2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-end py-3 bw2">
+              <div class="col-md-auto">
+                <p>
+                  Desenvolvido por
+                  <a
+                    href="https://github.com/felipepcastilhos/news-portal"
+                    target="_blank"
+                    >Felipe e Juan</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
