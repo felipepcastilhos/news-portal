@@ -1143,6 +1143,14 @@ section #single {
     padding-left: 20px;
 }
 
+/* #single .container article #lastpar { */
+    /* margin-bottom: 1000000px; */
+/* } */
+
+#single #second {
+    height: 1975px;
+}
+
 /* NOTÍCIA 3  */
 #single article .highlight {
     background-color: rgba(195, 208, 83, 0.5); /* Cor de destaque */
@@ -1151,7 +1159,15 @@ section #single {
     transition: background-color 0.8s ease; /* Transição suave */
 }
 
+#single #third {
+    height: 2175px;
+}
+
 /* NOTÍCIA 4  */
 #single article h3 #medalhas {
     /* font-size: 28.8px */
+}
+
+#single #fourth {
+    height: 2275px;
 }
