@@ -439,10 +439,10 @@ footer #footer-texts {
             padding: 0;
         }
 
-        .thumbnail img {
+        /* .thumbnail img { */
             /* max-width: 100%; Ajusta a imagem ao tamanho do contêiner */
             /* height: auto; Mantém a proporção da imagem */
-        }
+        /* } */
 
         .col-md-8 {
             padding-left: 1.5rem; /* Ajuste o padding conforme necessário */
@@ -1164,10 +1164,47 @@ section #single {
 }
 
 /* NOTÍCIA 4  */
-#single article h3 #medalhas {
+/* #single article h3 #medalhas { */
     /* font-size: 28.8px */
-}
+/* } */
 
 #single #fourth {
     height: 2275px;
+}
+
+/* FORM CONTAINER */
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group input[type="date"] {
+    padding: 7px;
+}
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
 }
