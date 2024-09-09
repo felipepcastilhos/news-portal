@@ -339,11 +339,11 @@ footer #footer-texts {
     max-width: 100%;
 }
 
-#single .container #bodytextinfo {
-    /* height: 2539px !important; */
-    height: 2200px !important;
-    /* AQUIIIIII E TAMBEM VERIFICAR AS MARGENS ESQUERDA E DIREITA DO SECTION SINGLE OU DIV CONTAINER DO SINGLE*/
-        }
+#single .container {
+    height: 2700px; 
+    padding-left: 190px; 
+    padding-right: 190px;
+}
 
 /* Ajustes específicos para a coluna com swiper */
 .col-8 {
@@ -902,7 +902,7 @@ img {
 
 #audiome-container {
     margin-top: -30px;
-    margin-bottom: 20px;
+    margin-bottom: 95.5px;
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -943,7 +943,7 @@ img {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-radius: 0;
     left: 50%;
     top: 50%;
@@ -1055,6 +1055,9 @@ img {
     z-index: -1000;
     }
 
+#single .container .size-post-thumbnail {
+    border-radius: 0%;
+}
 #more-related .news .thumbnail, #more-author .news .thumbnail {
     position: relative;
     width: 100%;
@@ -1114,4 +1117,41 @@ img {
 
 section #single {
     height: 2546.875px !important;
+}
+
+#layer {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+}
+
+
+/* NOTICIA 2 */
+#single article a {
+    color: #707c00;
+    text-decoration: underline;
+}
+
+#single article blockquote {
+    border-left: 3px solid rgba(195, 208, 83, .5);
+    padding-left: 20px;
+}
+
+/* NOTÍCIA 3  */
+#single article .highlight {
+    background-color: rgba(195, 208, 83, 0.5); /* Cor de destaque */
+    font-weight: 700; /* Negrito */
+    padding: 0 3px; /* Espaçamento para a área destacada */
+    transition: background-color 0.8s ease; /* Transição suave */
+}
+
+/* NOTÍCIA 4  */
+#single article h3 #medalhas {
+    /* font-size: 28.8px */
 }
